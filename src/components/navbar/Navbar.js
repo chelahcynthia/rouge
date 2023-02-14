@@ -13,6 +13,7 @@ import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp";
 import LoginSharpIcon from "@mui/icons-material/LoginSharp";
 import StoreSharpIcon from "@mui/icons-material/StoreSharp";
 import HomeSharpIcon from "@mui/icons-material/HomeSharp";
+import LogoutSharpIcon from "@mui/icons-material/LogoutSharp";
 
 export default function Navbar() {
   const [state, setState] = React.useState({
@@ -38,40 +39,77 @@ export default function Navbar() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <HomeSharpIcon />
-            </ListItemIcon>
-            <ListItemText primary="Home" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <StoreSharpIcon />
-            </ListItemIcon>
-            <ListItemText primary="Products" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <LoginSharpIcon />
-            </ListItemIcon>
-            <ListItemText primary="Log in" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <AccountCircleSharpIcon />
-            </ListItemIcon>
-            <ListItemText primary="Sign Up" />
-          </ListItemButton>
-        </ListItem>
-      </List>
+      {true ? (
+        <List>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <HomeSharpIcon />
+              </ListItemIcon>
+              <ListItemText primary="Home" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <StoreSharpIcon />
+              </ListItemIcon>
+              <ListItemText primary="Products" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <AccountCircleSharpIcon />
+              </ListItemIcon>
+              <ListItemText primary="Profile" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <LogoutSharpIcon />
+              </ListItemIcon>
+              <ListItemText primary="Log out" />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      ) : (
+        <List>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <HomeSharpIcon />
+              </ListItemIcon>
+              <ListItemText primary="Home" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <StoreSharpIcon />
+              </ListItemIcon>
+              <ListItemText primary="Products" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <LoginSharpIcon />
+              </ListItemIcon>
+              <ListItemText primary="Log in" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <AccountCircleSharpIcon />
+              </ListItemIcon>
+              <ListItemText primary="Sign Up" />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      )}
     </Box>
   );
 
