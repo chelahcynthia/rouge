@@ -17,7 +17,7 @@ function Signup() {
         <label>Password</label>
         <input className='sign-input' type='password' placeholder='Min 6 characters long'></input>
         <label>Confirm password</label>
-        <input className='sign-input' type='text' placeholder='Min 6 characters long '></input>
+        <input className='sign-input' type='password' placeholder='Min 6 characters long '></input>
         <button type='submit' className='signup-btn'>SignUp</button>
       </div>
       </div>
