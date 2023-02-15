@@ -4,13 +4,13 @@ import './Login.css'
 function Login() {
   return (
     <div className='login-container'>
-        <div className='brand-title'>Please Login</div>
+        <div className='brand-title'>Login</div>
         <div className='inputs'>
-            <label>EMAIL</label>
+            <label>Email</label>
             <input type="email" placeholder='example@test.com'></input>
-            <label>PASSWORD</label>
+            <label>password</label>
             <input type="password" placeholder='Min 6 characters long'></input>
-            <button type='submit'>LOGIN</button>
+            <button className='login-button' type='submit'>LOGIN</button>
         </div>
         </div>
   )

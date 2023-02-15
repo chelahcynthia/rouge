@@ -17,6 +17,7 @@ body{
     font-size: 1.8rem;
     color: #2d3a21;
     letter-spacing: 1px;
+    
 }
 .inputs{
     text-align: left;
@@ -48,9 +49,9 @@ input{
     box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 button{
-    color: white;
+    color: #ddb68c;
     margin-top: 20px;
-    background-color: #faa645;
+    background-color: #2d3a21;
     height: 40px;
     border-radius: 20px;
     cursor: pointer;
