@@ -1,0 +1,27 @@
+body {
+  background: #ecf0f3;
+  color: #2d3a21;
+}
+.signup-container {
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.sign-brand {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #2d3a21;
+  letter-spacing: 1px;
+}
+.signup-btn{
+    color: #ddb68c;
+    margin-top: 20px;
+    background-color: #2d3a21;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+}

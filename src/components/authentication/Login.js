@@ -10,7 +10,7 @@ function Login() {
             <input type="email" placeholder='example@test.com'></input>
             <label>password</label>
             <input type="password" placeholder='Min 6 characters long'></input>
-            <button className='login-button' type='submit'>LOGIN</button>
+            <button className='login-btn' type='submit'>LOGIN</button>
         </div>
         </div>
   )
