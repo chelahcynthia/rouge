@@ -1,0 +1,12 @@
+.card{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+img{
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    object-fit: cover;
+    max-height: max(10rem, 30vh);
+}
