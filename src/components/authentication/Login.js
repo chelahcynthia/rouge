@@ -11,14 +11,14 @@ function Login() {
       />
 
       <form className="login-form">
-        <div className="form-title">Login</div>
+        <h1 className="form-title">Welcome Back</h1>
         <div className="form-inputs">
           <label>Email</label>
           <br />
           <input type="email" placeholder="example@test.com"></input>
         </div>
         <div className="form-inputs">
-          <label>password</label>
+          <label>Password</label>
           <br />
           <input type="password" placeholder="Min 6 characters long"></input>
         </div>
