@@ -127,6 +127,7 @@ export default function Navbar() {
           {list("left")}
         </SwipeableDrawer>
       </React.Fragment>
+      
     </div>
   );
 }

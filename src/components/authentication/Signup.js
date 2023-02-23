@@ -4,7 +4,7 @@ import './Signup.css'
 function Signup() {
   return (
     <div className='signup-container'>
-      <div className='sign-brand'>Sign up</div>
+      <div className='sign-brand'>Signup</div>
       <div className='signup-inputs'>
         <label>First Name</label>
         <input className='sign-input' type='text' placeholder='enter your first name'></input>
