@@ -5,7 +5,7 @@ function Login() {
   return (
     <div className="login-container">
       <img
-        src="https://res.cloudinary.com/dfdxhrjcc/image/upload/v1676545829/rouge/pexels-pnw-production-8490222_dsu7ba.jpg"
+        src="https://res.cloudinary.com/dfdxhrjcc/image/upload/v1677142774/rouge/misolo_vzrcme.jpg"
         alt="login"
         className="login-img"
       />
