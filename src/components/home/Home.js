@@ -3,7 +3,7 @@ import ProductsList from "../products/ProductsList";
 
 function Home() {
   return (
-    <div>
+    <div className="home-page">
       <h1>Welcome</h1>
       <ProductsList />
     </div>
