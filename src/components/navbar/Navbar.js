@@ -4,13 +4,13 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-lg">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
           Rouge
-        </a>
+        </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo02"
@@ -18,25 +18,30 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-          <div class="d-flex">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <Link class="nav-link" aria-current="page" to="/">
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <div className="d-flex">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/login">
+              <li className="nav-item">
+                <Link className="nav-link" to="/login">
                   Login
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/signup">
+              <li className="nav-item">
+                <Link className="nav-link" to="/signup">
                   Register
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/productpage">
+                  Product Page
                 </Link>
               </li>
             </ul>

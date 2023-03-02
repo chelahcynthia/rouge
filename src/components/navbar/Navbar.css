@@ -19,6 +19,12 @@
   font-weight: 500;
 }
 
-.nav-link:active, .nav-link:hover {
+.nav-link:active,
+.nav-link:hover,
+.nav-link:active {
+  color: #ddb68c;
+}
+
+.nav-link:focus {
   color: #ddb68c;
 }
