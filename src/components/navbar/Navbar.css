@@ -1,0 +1,24 @@
+.navbar {
+  background-color: #2d3a21;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar-brand {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+.nav-link:active, .nav-link:hover {
+  color: #ddb68c;
+}
