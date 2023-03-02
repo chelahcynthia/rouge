@@ -4,8 +4,8 @@ import './Signup.css'
 function Signup() {
   return (
     <div className='signup-container'>
-      <div className='sign-brand'>Signup</div>
-      <div className='signup-inputs'>
+      <div className='sign-brand'>Create Your Account!</div>
+      <form className='signup-form'>
         <label>First Name</label>
         <input className='sign-input' type='text' placeholder='enter your first name'></input>
         <label>Second Name</label>
@@ -19,7 +19,7 @@ function Signup() {
         <label>Confirm password</label>
         <input className='sign-input' type='password' placeholder='Min 6 characters long '></input>
         <button type='submit' className='signup-btn'>SignUp</button>
-      </div>
+      </form>
       </div>
   )
 }
