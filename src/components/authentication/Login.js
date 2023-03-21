@@ -1,21 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+
+    fetch("http://localhost:4000/auth/sign_in", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    }).then((res) => {
+      console.log(res.headers.get("access-token"));
+      return res;
+    });
+  };
+
   return (
     <div className="login-box">
       <h2>Welcome Back!</h2>
-      <form>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <div className="user-box">
-          <input type="text" name="" required=""></input>
-          <label>Username</label>
+          <input
+            type="email"
+            name=""
+            required
+            placeholder="Email"
+            onChange={(e) =>
+              setFormData({ ...formData, email: e.target.value })
+            }
+          />
         </div>
         <div className="user-box">
-          <input type="password" name="" required=""></input>
-          <label>password</label>
+          <input
+            type="password"
+            name=""
+            required
+            placeholder="Password"
+            onChange={(e) =>
+              setFormData({ ...formData, password: e.target.value })
+            }
+          />
         </div>
         <button type="submit">Submit</button>
       </form>
+      <p className="redirect-link">
+        Don't have an account?{" "}
+        <Link className="rlink" to="/signup">
+          Register here
+        </Link>
+      </p>
     </div>
   );
 }

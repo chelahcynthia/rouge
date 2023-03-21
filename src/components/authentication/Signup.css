@@ -1,37 +1,71 @@
 .signup-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    background: #2d3a21;
+    width: 350px;
+    padding: 25px;
+    /* background: #2d3a21; */
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
+    margin: 16px auto;
 }
-input{
-    width: 100%;
+
+.sign-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3a21;
+  margin-bottom: 20px;
+}
+
+.signup-form > input{
+  width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #ddb68c;
+  color: #2d3a21;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #2d3a21;
   outline: none;
   background: transparent;
 }
-.signup-form button{
-    position: relative;
-    display: inline-block;
+
+.signup-form button {
     padding: 10px 20px;
     background-color: #2d3a21;
+    border: #2d3a21;
     color: #ddb68c;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px
+    letter-spacing: 4px;
+    width: 100%;
+}
+
+.signup-form button:hover {
+  transform: translateY(-10px);
+}
+
+.redirect-link {
+  margin-top: 16px;
+}
+
+.redirect-link > p {
+  color:#2d3a21;
+}
+
+.rlink {
+  color: #faa645;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.rlink:hover {
+  color: #faa645;
+}
+
+
+@media only screen and (min-width: 700px) {
+  .signup-container {
+    width: 500px;
+  }
 }
