@@ -3,15 +3,19 @@ import "./ProductCard.css";
 
 function ProductCard() {
   return (
-    <div className="product-card">
-      <div className="product-image">
-        <img
-          src="https://res.cloudinary.com/dfdxhrjcc/image/upload/v1676377741/rouge/pexels-alesia-kozik-7796597_vy697y.jpg"
-          alt="dropper"
-        />
-      </div>
-      <span className="product-title">product-title</span>
-      <span className="product-price">Kes. 399</span>
+    <div class="card-list">
+      <article class="card">
+        <div class="card-image">
+          <img
+            src="https://res.cloudinary.com/dphlf7a8o/image/upload/v1676400876/pexels-dilruba-sar%C4%B1%C3%A7imen-7870489_kodmsj.jpg"
+            alt="An orange painted blue, cut in half laying on a blue background"
+          />
+        </div>
+        <div class="card-header">
+          <span className="product-title">Serum</span>
+          <span className="product-price">Kes. 2500</span>
+        </div>
+      </article>
     </div>
   );
 }
