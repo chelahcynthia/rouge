@@ -16,7 +16,7 @@ function ProductPage() {
       </div>
       <div className="product-details">
         <h1 className="product-name">Serum</h1>
-        <p className="product-price">KES 300</p>
+        <p className="product-price">Kes. 5000</p>
         <p className="product-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
           distinctio dolor officiis est? Enim ipsa quae nesciunt temporibus sint
