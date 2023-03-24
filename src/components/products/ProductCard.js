@@ -38,8 +38,11 @@ function ProductCard() {
             <i class="fas fa-star" aria-hidden="true"></i>
           </label>
         </div>
+        <div className="btn">
+          <button className="cart-btn">VIEW PRODUCT</button>
 
-        <button className="cart-btn">ADD TO CART</button>
+          <button className="cart-btn">ADD TO CART</button>
+        </div>
       </div>
     </div>
   );

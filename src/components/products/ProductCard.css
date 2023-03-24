@@ -38,14 +38,22 @@ img {
   color: #faa645;
   font-weight: 800;
 }
+.btn{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
 .cart-btn{
   border: #44594a;
   background-color: #44594a;
   color: #f8cc9f;
   font-size: 1rem;
   font-weight: bolder;
-  width: 100%;
-  padding: .8rem 0;
+  width: 50%;
+  margin: 0 10px;
+
 }
 .rating {
   display: inline-block;
@@ -75,3 +83,5 @@ img {
     width: 250px;
   }
 }
+
+
