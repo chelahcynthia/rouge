@@ -1,4 +1,5 @@
 import React from "react";
+import StarRating from "../reused/StarRating";
 import "./ProductCard.css";
 
 function ProductCard() {
@@ -12,6 +13,9 @@ function ProductCard() {
       <div className="product-details-card">
         <span className="product-title-card">product-title</span>
         <span className="product-price-card">Kes. 399</span>
+      </div>
+      <div>
+        <StarRating />
       </div>
     </div>
   );
