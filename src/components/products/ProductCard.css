@@ -47,6 +47,28 @@ img {
   width: 100%;
   padding: .8rem 0;
 }
+.rating {
+  display: inline-block;
+  font-size: 15px;
+}
+
+/* .rating input {
+  display: none;
+} */
+
+.rating label {
+  cursor: pointer;
+  color: #ddd;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+  color: #FFD700;
+}
+
 
 @media only screen and (min-width: 600px) {
   .product-card {

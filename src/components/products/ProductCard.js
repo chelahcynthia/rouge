@@ -16,7 +16,29 @@ function ProductCard() {
 
           <span className="product-price">Kes. 5000</span>
         </div>
-        
+        <div class="rating">
+          <input type="radio" name="rating" id="star5" value="5"></input>
+          <label for="star5">
+            <i class="fas fa-star" aria-hidden="true"></i>
+          </label>
+          <input type="radio" name="rating" id="star4" value="4"></input>
+          <label for="star4">
+            <i class="fas fa-star" aria-hidden="true"></i>
+          </label>
+          <input type="radio" name="rating" id="star3" value="3"></input>
+          <label for="star3">
+            <i class="fas fa-star" aria-hidden="true"></i>
+          </label>
+          <input type="radio" name="rating" id="star2" value="2"></input>
+          <label for="star2">
+            <i class="fas fa-star" aria-hidden="true"></i>
+          </label>
+          <input type="radio" name="rating" id="star1" value="1"></input>
+          <label for="star1">
+            <i class="fas fa-star" aria-hidden="true"></i>
+          </label>
+        </div>
+
         <button className="cart-btn">ADD TO CART</button>
       </div>
     </div>
