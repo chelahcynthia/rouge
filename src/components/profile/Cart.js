@@ -1,6 +1,8 @@
 import React from "react";
 import "./Cart.css";
 
+
+
 function Cart() {
   return (
     <div className="wrapper">
@@ -41,13 +43,14 @@ function Cart() {
         </div>
 
         <div className="right-bar">
-				<p><span>Subtotal</span> <span>$120</span></p>
-				<hr></hr>
-				<p><span>Tax (5%)</span> <span>$6</span></p>
-				<hr></hr>
-				<p><span>Shipping</span> <span>$15</span></p>
-				<hr></hr>
-				<p><span>Total</span> <span>$141</span></p><a href="#"><i class="fa fa-shopping-cart"></i>Checkout</a>
+				{/* <p><span>Subtotal</span> <span>$120</span></p>
+				<hr></hr> */}
+				{/* <p><span>Tax (5%)</span> <span>$6</span></p> */}
+				{/* <hr></hr> */}
+				{/* <p><span>Shipping</span> <span>$15</span></p>
+				<hr></hr> */}
+				<p><span>Total</span> <span>ksh. 5000</span></p>
+                <button className="checkout-btn"><i class="fa fa-shopping-cart"></i>Checkout</button>
 			</div>
       </div>
     </div>
