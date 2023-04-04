@@ -9,12 +9,26 @@ function Signup() {
     username: "",
     email: "",
     password: "",
-    confirmPassword: "",
+    password_confirmation: "",
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+
+    fetch("http://localhost:4000/auth/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    }).then((res) => {
+      if (res.ok) {
+        console.log("success");
+      }
+      console.log(res.headers.get("access-token"));
+      return res;
+    });
   };
 
   return (
@@ -64,7 +78,7 @@ function Signup() {
           type="password"
           placeholder="Confirm Password"
           onChange={(e) =>
-            setFormData({ ...formData, confirmPassword: e.target.value })
+            setFormData({ ...formData, password_confirmation: e.target.value })
           }
         ></input>
         <button type="submit" className="signup-btn">

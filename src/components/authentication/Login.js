@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
@@ -7,6 +7,8 @@ function Login() {
     email: "",
     password: "",
   });
+
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,8 +21,12 @@ function Login() {
       },
       body: JSON.stringify(formData),
     }).then((res) => {
-      console.log(res.headers.get("access-token"));
-      return res;
+      if (res.ok) {
+        console.log("success");
+        console.log(res.headers.get("access-token"));
+        console.log(res.headers);
+        navigate("/");
+      }
     });
   };
 
