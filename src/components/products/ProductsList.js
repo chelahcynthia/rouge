@@ -2,15 +2,10 @@ import React from "react";
 import ProductCard from "./ProductCard";
 import "./ProductsList.css";
 
-function ProductsList() {
+function ProductsList({ products }) {
   return (
     <div className="product-list">
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
+      {products && products.map((product) => <ProductCard product={product} />)}
     </div>
   );
 }
