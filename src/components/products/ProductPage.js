@@ -1,6 +1,8 @@
 import React from "react";
 import "./ProductPage.css";
 
+
+
 function ProductPage() {
   return (
     <div className="product-page">
@@ -25,7 +27,7 @@ function ProductPage() {
           inventore exercitationem velit animi repellendus amet neque dolore cum
           quo quas.
         </p>
-        <button className="add-to-cart-button">ADD TO CART</button>
+      ]
       </div>
     </div>
   );
